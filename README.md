@@ -1,127 +1,163 @@
-# Uber_Trip_analysis_Dashboard_powerbi
-This project analyzes Uber trip data using Power BI to uncover booking trends, revenue patterns, trip efficiency, and customer behavior. The objective is to deliver actionable business insights through interactive dashboards that support data-driven decision-making.  📅 Data Period: June 01, 2024 – June 30, 2024
-🧾 Problem Statement
+# Uber Bookings & Trip Analysis (Power BI)
 
-* The analysis aims to:
+## 📌 Project Overview
 
-Track booking volume and revenue trends
+This project analyses Uber trip data using **Power BI** to understand booking trends, revenue patterns, trip efficiency, and customer behavior.
+The goal is to provide **clear business insights** through interactive dashboards that support data-driven decision making.
 
-Measure trip efficiency (distance & duration)
+The dataset covers Uber trips from **June 01, 2024 to June 30, 2024**, containing **103,728 trip records** along with a supporting **location table**.
 
-Understand payment method and vehicle preferences
+---
 
-Identify time-based and location-based demand patterns
+## 🧾 Problem Statement
 
-Enable drill-down analysis for detailed insights
+Analyse Uber trip data to:
 
-📊 Key KPIs
+* Track booking and revenue trends
+* Measure trip efficiency (distance & duration)
+* Understand payment and vehicle preferences
+* Identify time-based and location-based demand patterns
+* Enable drill-down analysis for detailed investigation
 
-Total Bookings: 103.7K
+---
 
-Total Booking Value: $1.6M
+## 📊 Key KPIs Answered
 
-Average Booking Value: $15
+* **Total Bookings:** 103.7K
+* **Total Booking Value:** $1.6M
+* **Average Booking Value:** $15
+* **Average Trip Time:** 16 minutes
+* **Total Trip Distance:** 349K miles
+* **Average Trip Distance:** 3 miles
 
-Average Trip Time: 16 minutes
+---
 
-Total Trip Distance: 349K miles
+## 🗂️ Data Description
 
-Average Trip Distance: 3 miles
+### Tables Used
 
-🗂️ Data Description
-Tables Used
+* **Trip Details Table**
 
-Trip Details Table
+  * 103,728 rows
+  * Trip ID, pickup date & time, vehicle type, payment type, passengers, distance, booking value, pickup location
+* **Location Table**
 
-103,728 rows
+  * Location mapping for pickup and drop-off analysis
 
-Trip ID, pickup date & time, vehicle type, payment type, passengers, distance, booking value, pickup location
+### Data Period
 
-Location Table
+* **June 01, 2024 – June 30, 2024**
 
-Pickup & drop-off location mapping for spatial analysis
+---
 
-📈 Dashboards Developed
+## 📈 Dashboards Created
 
-1️⃣ Overview Analysis Dashboard
+### 1️⃣ Overview Analysis Dashboard
 
-Focus Areas:
+<img width="1293" height="714" alt="Screenshot 2025-12-29 164101" src="https://github.com/user-attachments/assets/b0ba28e3-a150-450a-903f-9df388e37a3c" />
 
-Overall bookings & revenue KPIs
 
-Bookings by payment method (Uber Pay, Cash, etc.)
+**Focus Areas:**
 
-Day vs Night trip comparison
+* Overall booking and revenue KPIs
+* Bookings by payment type (Uber Pay, Cash, etc.)
+* Day vs Night trip comparison
+* Vehicle type performance
+* Top pickup & drop-off locations
+* Farthest trip analysis
 
-Vehicle type performance
+---
 
-Top pickup & drop-off locations
+### 2️⃣ Time Analysis Dashboard
 
-Farthest trip analysis
+<img width="1290" height="723" alt="Screenshot 2025-12-29 164543" src="https://github.com/user-attachments/assets/5c3e03be-c711-48a7-b7d5-697d59bd83a5" />
 
-<img width="1293" height="714" alt="Screenshot 2025-12-29 164101" src="https://github.com/user-attachments/assets/7a3d4029-27eb-4583-9829-d0638d895ad6" />
 
+**Focus Areas:**
 
-2️⃣ Time Analysis Dashboard
+* Bookings by pickup time (10-minute intervals)
+* Bookings by day of the week
+* Hour-by-day heatmap to identify peak demand hours
+* Dynamic measure selector (Bookings / Revenue / Distance)
 
-Focus Areas:
+---
 
-Bookings by pickup time (10-minute intervals)
+### 3️⃣ Details (Drill-Through) Dashboard
 
-Bookings by day of the week
+<img width="1278" height="712" alt="Screenshot 2025-12-29 164605" src="https://github.com/user-attachments/assets/8e3e6440-f834-47be-8bf8-29436c97393c" />
 
-Hour-by-day heatmap to identify peak demand
 
-Dynamic measure selector (Bookings / Revenue / Distance)
-<img width="1290" height="723" alt="Screenshot 2025-12-29 164543" src="https://github.com/user-attachments/assets/dc5fca50-222d-433d-9468-ca9e89818fb4" />
+**Focus Areas:**
 
+* Trip-level detailed data view
+* Drill-through enabled from any visual
+* Ability to explore filtered records for deeper analysis
 
+---
 
+## 🔍 Key Insights
 
-3️⃣ Details (Drill-Through) Dashboard
+* **Uber Pay** is the most preferred payment method among users.
+* **UberX** is the most frequently booked vehicle type.
+* Bookings gradually increase from **Monday (14.7K)** to **Wednesday (15.7K)**.
+* Sharp drop observed on **Thursday (11.2K)** and **Friday (9.3K)**.
+* Strong surge during weekends:
 
-Focus Areas:
+  * **Saturday:** 18.7K bookings
+  * **Sunday:** 19.7K bookings
+* Users clearly prefer traveling more on weekends.
 
-Trip-level detailed data view
+---
 
-Drill-through enabled from all visuals
+## 🛠️ Power BI Features Implemented
 
-Deep analysis of filtered records
-<img width="1278" height="712" alt="Screenshot 2025-12-29 164605" src="https://github.com/user-attachments/assets/d6d46e48-7bd0-4ada-8cdd-6956444bebb5" />
+* Dynamic KPI cards
+* Disconnected table for **measure selector**
+* Drill-through functionality
+* Bookmarks for navigation
+* Interactive slicers (Date, City)
+* Conditional formatting
+* Heatmaps for time analysis
 
+---
 
+## 📌 Tools & Technologies
 
+* **Power BI**
+* **DAX**
+* **Excel (Data Source)**
 
-🔍 Key Business Insights
+---
 
-Uber Pay is the most preferred payment method.
+## 📁 Repository Structure
 
-UberX is the most frequently booked vehicle type.
+```
+├── data/
+│   └── Uber Trip Details.xlsx
+│   └── Location Table.xlsx
+├── dashboard/
+│   └── Uber_Bookings_&_Trip_Analysis_Dashboard.pbix
+├── docs/
+│   └── Problem Statement.pdf
+├── assests/
+│   ├── overview_analysis_dashboard.png
+│   ├── time_analysis_dashboard.png
+│   └── details_drill_through.png
+└── README.md
+```
+---
 
-Bookings increase from Monday (14.7K) to Wednesday (15.7K).
+## ✅ Conclusion
 
-A noticeable dip occurs on Thursday (11.2K) and Friday (9.3K).
+This project demonstrates the ability to:
 
-Strong weekend surge:
+* Translate business requirements into dashboards
+* Work with large datasets
+* Design meaningful KPIs
+* Extract actionable insights from data
+* Build interactive and user-friendly Power BI reports
 
-Saturday: 18.7K bookings
+---
 
-Sunday: 19.7K bookings
 
-Customers clearly prefer traveling more on weekends.
 
-🛠️ Power BI Features Used
-
-Dynamic KPI cards
-
-Disconnected table for measure selector
-
-Drill-through functionality
-
-Bookmarks for page navigation
-
-Interactive slicers (Date, City)
-
-Conditional formatting
-
-Heatmaps for time-based analysis
