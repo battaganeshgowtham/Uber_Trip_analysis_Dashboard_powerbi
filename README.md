@@ -42,6 +42,7 @@ Location Table
 Pickup & drop-off location mapping for spatial analysis
 
 📈 Dashboards Developed
+
 1️⃣ Overview Analysis Dashboard
 
 Focus Areas:
@@ -58,6 +59,9 @@ Top pickup & drop-off locations
 
 Farthest trip analysis
 
+<img width="1293" height="714" alt="Screenshot 2025-12-29 164101" src="https://github.com/user-attachments/assets/7a3d4029-27eb-4583-9829-d0638d895ad6" />
+
+
 2️⃣ Time Analysis Dashboard
 
 Focus Areas:
@@ -69,6 +73,10 @@ Bookings by day of the week
 Hour-by-day heatmap to identify peak demand
 
 Dynamic measure selector (Bookings / Revenue / Distance)
+<img width="1290" height="723" alt="Screenshot 2025-12-29 164543" src="https://github.com/user-attachments/assets/dc5fca50-222d-433d-9468-ca9e89818fb4" />
+
+
+
 
 3️⃣ Details (Drill-Through) Dashboard
 
@@ -79,6 +87,10 @@ Trip-level detailed data view
 Drill-through enabled from all visuals
 
 Deep analysis of filtered records
+<img width="1278" height="712" alt="Screenshot 2025-12-29 164605" src="https://github.com/user-attachments/assets/d6d46e48-7bd0-4ada-8cdd-6956444bebb5" />
+
+
+
 
 🔍 Key Business Insights
 
